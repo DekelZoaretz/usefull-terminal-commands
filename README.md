@@ -10,6 +10,11 @@
  - get folder size - ```$ du -hs <FOLDER_NAME>```
  - Creating Symlink ```$ ln -s source_file symbolic_link```
  - list of port - ```$ lsof -i -P -n```
+ - find file in a folder ```$ sudo find <DIRECTORY> -name "<PATTERN>"```
+ - count the number of lines in a file ```$ wc -l yourTextFile```
+ - count the number of words in a file ```$ wc -w yourTextFile```
+ - count the number of characters in a file ```$ wc -m yourTextFile```
+ - count the number of lines in an command output ```$ <COMMAND> | wc -l```
 
 ## Git
  - checkout existing branch ```$ git checkout <BARNCH_NAME>```
@@ -57,3 +62,9 @@
  - list all existing containers ```$ docker container ls -a```
  - removing all containers ```$ docker rm -f $(docker ps -a -q)```
  - removing all images ```$ docker rmi $(docker images -q)```
+ 
+## VIM
+ - go to line ```:<LINE_NUMBER> ```
+ - moving lines up or down [link](https://vim.fandom.com/wiki/Moving_lines_up_or_down)
+ - copy and paste a line  [link](https://www.vimfromscratch.com/articles/how-to-copy-and-paste-a-line-in-vim)
+ - delete a line - press on the keyboard ```dd```
