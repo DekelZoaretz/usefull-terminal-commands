@@ -4,17 +4,21 @@
 
  - running processes ```$ ps aux```
  - kill running processes by pattern ```$ pkill -f <PATTERN>  ```
- - search text in directory ```$ grep -rnw DIRECTORY_PATH -e 'TEXT_TO_SEARCH'``` - r (recursive) n (line number) w (whole word)
  - get my public IP ```$ hostname -I | awk '{print $1}'```
  - view system information using neofetch ```$ neofetch``` 
  - get folder size - ```$ du -hs <FOLDER_NAME>```
  - Creating Symlink ```$ ln -s source_file symbolic_link```
  - list of port - ```$ lsof -i -P -n```
+ 
+#### Search
  - find file in a folder ```$ sudo find <DIRECTORY> -name "<PATTERN>"```
- - count the number of lines in a file ```$ wc -l yourTextFile```
- - count the number of words in a file ```$ wc -w yourTextFile```
- - count the number of characters in a file ```$ wc -m yourTextFile```
+ - search text in directory ```$ grep -rnw DIRECTORY_PATH -e 'TEXT_TO_SEARCH'``` - r (recursive) n (line number) w (whole word)
+ 
+#### Count
  - count the number of lines in an command output ```$ <COMMAND> | wc -l```
+ - count the number of characters in a file ```$ wc -m yourTextFile```
+ - count the number of words in a file ```$ wc -w yourTextFile```
+ - count the number of lines in a file ```$ wc -l yourTextFile```
 
 ## Git
  - checkout existing branch ```$ git checkout <BARNCH_NAME>```
@@ -26,17 +30,17 @@
  - delete branch locally ```$ git branch -D <BRANCH_NAME>```
  - remove commit locally ```$ git reset HEAD^ ```
  - rename the current branch ```$ git branch -m <NEW_NAME>```
-### Stashing
+#### Stashing
  - stash changes ```$ git stash```
  - list of stashes ```$ git stash list```
  - apply last stash ```$ git stash apply stash@{0}```
  - apply and remove last stash ```$ git stash pop```
-### Cherry pick
+#### Cherry pick
  - apply cherry-pick ```$ git cherry-pick <COMMIT-SHA>```
  - abort last cherry-pick ```$ git cherry-pick --abort```
-### Config
+#### Config
  - list global git config ```$ git config --list```
-### Nice Logging
+#### Nice Logging
  - tree ```$ git log --graph --pretty="%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(yellow)- %an%C(reset)%C(red)%d%C(reset)"```
  - oneline ```$ git log --oneline --decorate --color --pretty="%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(yellow)- %an%C(reset)%C(red)%d%C(reset)"```
  - with extra info ```$ git log --graph --decorate --all```
@@ -54,7 +58,7 @@
  - get Service configmap  ```$ kubectl  -n <NAMESPACE> get cm -o yaml```
  - get current context ```$ kubectl config current-context```
  - switch context ```$ kubectl config use-context <CLUSTER_NAME>```
-### Helm 
+#### Helm 
  - get list of helm versions: ```$ helm -n <NAMESPACE> list```
 
 ## Docker
