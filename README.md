@@ -72,3 +72,29 @@
  - moving lines up or down [link](https://vim.fandom.com/wiki/Moving_lines_up_or_down)
  - copy and paste a line  [link](https://www.vimfromscratch.com/articles/how-to-copy-and-paste-a-line-in-vim)
  - delete a line - press on the keyboard ```dd```
+
+#### vimrc configuration
+```sh
+syntax enable
+set number
+set showcmd
+"" set mouse=a
+set cursorline
+filetype indent on
+set wildmenu
+set showmatch
+set incsearch
+set hlsearch
+
+" Auto text wrapping
+set wrap
+
+" Encoding
+set encoding=utf-8
+
+" Status bar
+set laststatus=2
+
+" Intent width
+set shiftwidth=2
+```
