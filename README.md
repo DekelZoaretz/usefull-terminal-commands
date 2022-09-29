@@ -13,6 +13,7 @@
 #### Search
  - find file in a folder ```$ sudo find <DIRECTORY> -name "<PATTERN>"```
  - search text in directory ```$ grep -rnw DIRECTORY_PATH -e 'TEXT_TO_SEARCH'``` - r (recursive) n (line number) w (whole word)
+ - search text in a file ```$ grep <TEXT_TO_SEARCH>  <FILE_NAME>```
  
 #### Count
  - count the number of lines in an command output ```$ <COMMAND> | wc -l```
