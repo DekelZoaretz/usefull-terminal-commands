@@ -70,8 +70,8 @@
  
 ## VIM
  - go to line ```:<LINE_NUMBER> ```
- - move current line up ```:m+ ```
- - move cuurent line down ```:m-2 ```
+ - move current line down ```:m+ ```
+ - move cuurent line up ```:m-2 ```
  - run last command ```@: ```
  - moving lines up or down [link](https://vim.fandom.com/wiki/Moving_lines_up_or_down)
  - copy and paste a line  [link](https://www.vimfromscratch.com/articles/how-to-copy-and-paste-a-line-in-vim)
