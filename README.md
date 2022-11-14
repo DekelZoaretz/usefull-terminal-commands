@@ -78,6 +78,7 @@
  - delete a line - press on the keyboard ```dd```
  - run terminal command ```:! <COMMAND> ```
  - go to back directory browsing after opening file in vim ```:b#```
+ - empty a file: first go to the start of the file with ```gg``` and then delete all lines with ```dG``` 
 
 #### vimrc configuration
 ```sh
