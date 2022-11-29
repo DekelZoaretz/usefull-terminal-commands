@@ -59,6 +59,7 @@
  - get Service configmap  ```$ kubectl  -n <NAMESPACE> get cm -o yaml```
  - get current context ```$ kubectl config current-context```
  - switch context ```$ kubectl config use-context <CLUSTER_NAME>```
+ - show config ```$ kubectl config view```
 #### Helm 
  - get list of helm versions: ```$ helm -n <NAMESPACE> list```
 
