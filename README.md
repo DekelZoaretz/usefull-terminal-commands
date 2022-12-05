@@ -22,7 +22,8 @@
  - count the number of lines in a file ```$ wc -l yourTextFile```
 
 ## Git
- - checkout existing branch ```$ git checkout <BARNCH_NAME>```
+ - checkout existing branch ```$ git checkout <BARNCH_NAME>``` OR ```$git switch <BARNCH_NAME>``` (git >= 2.23)
+ - creating new branch ```$ git checkout -b <BARNCH_NAME>``` OR ```$ git switch -c <BARNCH_NAME>``` (git >= 2.23)
  - commit with message ```$ git commit -m "<MESSAGE>" ```
  - removing all unstaged changes ```$ git checkout -- .```
  - diff with local ```$ git diff <FILE_PATH>```
@@ -31,6 +32,7 @@
  - delete branch locally ```$ git branch -D <BRANCH_NAME>```
  - remove commit locally ```$ git reset HEAD^ ```
  - rename the current branch ```$ git branch -m <NEW_NAME>```
+ - discard changes from unstaged file ```$ git restore <FILE_PATH> ``` (git >= 2.23)
 #### Stashing
  - stash changes ```$ git stash```
  - list of stashes ```$ git stash list```
