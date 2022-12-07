@@ -71,10 +71,10 @@
  - removing all containers ```$ docker rm -f $(docker ps -a -q)```
  - removing all images ```$ docker rmi $(docker images -q)```
  
-## VIM
+## VIM [help files](https://vimhelp.org/)
  - go to line ```:<LINE_NUMBER> ```
  - move current line down ```:m+ ```
- - move cuurent line up ```:m-2 ```
+ - move current line up ```:m-2 ```
  - run last command ```@: ```
  - moving lines up or down [link](https://vim.fandom.com/wiki/Moving_lines_up_or_down)
  - copy and paste a line  [link](https://www.vimfromscratch.com/articles/how-to-copy-and-paste-a-line-in-vim)
@@ -82,6 +82,16 @@
  - run terminal command ```:! <COMMAND> ```
  - go to back directory browsing after opening file in vim ```:b#```
  - empty a file: first go to the start of the file with ```gg``` and then delete all lines with ```dG``` 
+ - gg - go to first line
+ - G - go to last line
+ - w - move the cursor forward one word
+ - b - moves backward to the start of the previous word
+ - x - delete forward chracter
+ - X - delete backward character
+ - r{char} - Replace the character under the cursor with {char}
+ - gUU - Make current line uppercase
+ - guu - Make current line lowercase
+ - R - Enter Replace mode: Each character you type replaces an existing character
 
 #### vimrc configuration
 ```sh
