@@ -9,7 +9,7 @@
  - get folder size - ```$ du -hs <FOLDER_NAME>```
  - Creating Symlink ```$ ln -s source_file symbolic_link```
  - list of port - ```$ lsof -i -P -n```
- - updating premissions of a file/dir - ```$ chmod u=rwx,g=rwx,o=rwx myfile```
+ - updating permissions of a file/dir - ```$ chmod u=rwx,g=rwx,o=rwx myfile```
  - changing the owner/group of a file/dir = ```$ chown user1:group1 myfile```
  
 #### Search
