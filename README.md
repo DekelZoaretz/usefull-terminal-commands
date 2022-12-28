@@ -59,6 +59,7 @@
  - get inside a pod - ```$ kubectl -n <NAMESPACE> exec -it <POD_NAME> bash```
  - get inside a container that inside a pod: ```$ kubectl -n <NAMESPACE> exec -it <POD>  -c <Container> bash```
  - delete pod: ```$ kubectl -n <NAMESPACE> delete pod <POD_NAME>```
+ - force delete pod: ```$ kubectl -n <NAMESPACE> delete pod <POD_NAME> --grace-period=0 --force```
  - get all NOT running pods: ```$ kubectl  get pods -n <NAMESPACE> | awk '{ if ($3 != "Running"){print} }'```
  - get Service configmap  ```$ kubectl  -n <NAMESPACE> get cm -o yaml```
  - get current context ```$ kubectl config current-context```
