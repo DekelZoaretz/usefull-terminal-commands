@@ -70,6 +70,7 @@
  - show config ```$ kubectl config view```
 #### Helm 
  - get list of helm versions: ```$ helm -n <NAMESPACE> list```
+ - getting the yaml output of chart: ```$ helm dependencies update <PATH_TO_CART_YAML_FOLDER> && helm template <PATH_TO_CART_YAML_FOLDER>```
 
 ## Docker
  - list all working containers ```$ docker container ls```
