@@ -1,0 +1,6 @@
+{
+  "id":"<ID>",
+  "<FIELD_NAME>": {
+	"set/remove/add":[ "<FIELD_VALUE>" ]
+  }
+}
