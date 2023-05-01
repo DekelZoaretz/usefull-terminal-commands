@@ -7,6 +7,7 @@
  - get my public IP ```$ hostname -I | awk '{print $1}'```
  - view system information using neofetch ```$ neofetch``` 
  - get folder size - ```$ du -hs <FOLDER_NAME>```
+ - get disc size - ```$ df -H``` - The size is displayed in the unit of "H" which stands for "Human-readable" and uses powers of 1000 (i.e., 1 kilobyte = 1000 bytes).
  - Creating Symlink ```$ ln -s source_file symbolic_link```
  - list of port - ```$ lsof -i -P -n```
  - updating permissions of a file/dir - ```$ chmod u=rwx,g=rwx,o=rwx myfile```
