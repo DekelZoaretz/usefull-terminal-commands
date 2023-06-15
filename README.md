@@ -14,6 +14,7 @@
  - changing the owner/group of a file/dir = ```$ chown user1:group1 myfile```
  - get memory you have - ```$ free -g -h -t```
  - transfer file to other user: ```$ scp -P 3832 <FILE_NAME> <USERNAME>:/home/dev```
+ - get load average: ```$ uptime ``` - system load averages for the past 1, 5, and 15 minutes
  
 #### Search
  - find file in a folder ```$ sudo find <DIRECTORY> -name "<PATTERN>"```
