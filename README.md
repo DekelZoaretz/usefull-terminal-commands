@@ -70,6 +70,8 @@
  - get current context ```$ kubectl config current-context```
  - switch context ```$ kubectl config use-context <CLUSTER_NAME>```
  - show config ```$ kubectl config view```
+ - logging a pod ```$ kubectl -n <NAMESPACE> logs -f  <POD_NAME> [-c CONTAINER_NAME] --tail 1000```
+ - logging a service ```$ kubectl -n <NAMESPACE> logs -f svc/<SERVICE_NAME> --tail 1000``` - if the service has multiple pods
 #### Helm 
  - get list of helm versions: ```$ helm -n <NAMESPACE> list```
  - getting the yaml output of chart: ```$ helm dependencies update <PATH_TO_CART_YAML_FOLDER> && helm template <PATH_TO_CART_YAML_FOLDER>```
