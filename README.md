@@ -15,7 +15,7 @@
  - get memory you have - ```$ free -g -h -t```
  - transfer file to other user: ```$ scp -P 3832 <FILE_NAME> <USERNAME>:/home/dev```
  - get load average: ```$ uptime ``` - system load averages for the past 1, 5, and 15 minutes
- - copy files to remote directory with rsync: ```$ rsync -av --partial --inplace --append --exclude 'logs' IP_ADRESS:/path/to/remote/directory/ .```
+ - copy files to remote directory with *rsync*: ```$ rsync -av --partial --inplace --append --exclude 'logs' IP_ADRESS:/path/to/remote/directory/ .```
    - -a, --archive: Preserves file attributes, permissions, ownership, and timestamps during synchronization.
    - -v, --verbose: Displays detailed output, providing information about the transferred files.
    - --partial: Keeps partially transferred files if the synchronization process is interrupted.
@@ -23,7 +23,7 @@
    - --append: Appends changes to existing files if they already exist.
    - --exclude 'logs': Ignores the "logs" directory during synchronization. (to ignore multiple: just add more --exclude)
    - .: Destination directory on the local system where files from the source directory will be synchronized (current working directory).
-   - OPTIONAL - --password-file=password.txt when need to use password for remote access
+   - __Optional__: --password-file=password.txt when need to use password for remote access
  
 #### Search
  - find file in a folder ```$ sudo find <DIRECTORY> -name "<PATTERN>"```
