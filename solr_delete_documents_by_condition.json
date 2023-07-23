@@ -1,0 +1,6 @@
+// Document Type: solr Command (raw XML or JSON)
+{
+   "delete":{
+      "query":"FIELD_NAME:FIELD_VALUE"
+   }
+}
