@@ -68,6 +68,11 @@ hchart() {
     helm -n $ns list | grep $chartname | awk '{print $9}'
 }
 
+kwatch() {
+    echo "watch 'kubectl get pods -o wide | awk 'NR==1 || /$1/'' ";
+    watch "kubectl get pods -o wide | awk 'NR==1 || /$1/'"
+}
+
 kgrep() {
         local ns=$2
         echo "kubectl get pods -n $ns -o wide | awk 'NR==1 || /$1/' ";
