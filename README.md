@@ -92,6 +92,11 @@
  - removing all images ```$ docker rmi $(docker images -q)```
  
 ## VIM [help files](https://vimhelp.org/)
+ - open new tab - ```:tabnew```
+ - open new window - ```:new```
+ - open new vertical window - ```:vnew```
+ - navigate between tabs - ```gt``` OR ```gT```
+ - close all windows - ```:qall```
  - go to line ```:<LINE_NUMBER> ```
  - move current line down ```:m+ ```
  - move current line up ```:m-2 ```
