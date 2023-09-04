@@ -2,6 +2,7 @@ set shell=/bin/bash
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" vundle installation: https://github.com/VundleVim/Vundle.vim#quick-start
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
