@@ -10,6 +10,7 @@
  - get disc size - ```$ df -H``` - The size is displayed in the unit of "H" which stands for "Human-readable" and uses powers of 1000 (i.e., 1 kilobyte = 1000 bytes).
  - Creating Symlink ```$ ln -s source_file symbolic_link```
  - list of port - ```$ lsof -i -P -n```
+ - get port usage - ```$ lsof -i :<PORT_NUMBER>```
  - updating permissions of a file/dir - ```$ chmod u=rwx,g=rwx,o=rwx myfile``` - u (user), g (group), o (other), r (read), w (write), x (execute)
  - changing the owner/group of a file/dir = ```$ chown user1:group1 myfile```
  - get memory you have - ```$ free -g -h -t```
