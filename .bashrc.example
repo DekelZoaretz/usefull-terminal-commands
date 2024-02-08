@@ -54,18 +54,16 @@ fi
 # export SYSTEMD_PAGER=
 
 hlist() {
-        local ns=${2}
-        echo "helm -n $ns list | awk 'NR==1 || /$1/'"
+        echo "helm list | awk 'NR==1 || /$1/'"
         # using awk to print the first line
         # NR -  total number of records processed
-        helm -n $ns list | awk "NR==1 || /$1/"
+        helm list | awk "NR==1 || /$1/"
 }
 
 hchart() {
-    local ns=${2}
     local chartname="${1:-jback}"
-    echo "helm -n $ns list | grep $chartname | awk '{print $9}'";
-    helm -n $ns list | grep $chartname | awk '{print $9}'
+    echo "helm list | grep $chartname | awk '{print $9}'";
+    helm list | grep $chartname | awk '{print $9}'
 }
 
 kwatch() {
@@ -74,17 +72,15 @@ kwatch() {
 }
 
 kgrep() {
-        local ns=$2
-        echo "kubectl get pods -n $ns -o wide | awk 'NR==1 || /$1/' ";
+        echo "kubectl get pods -o wide | awk 'NR==1 || /$1/' ";
         # using awk to print the first line
         # NR -  total number of records processed
-        kubectl get pods -n $ns -o wide | awk "NR==1 || /$1/"
+        kubectl get pods -o wide | awk "NR==1 || /$1/"
 }
 
 errpods() {
-        local ns=$1
-        echo "kubectl get pods -n $ns -o wide | awk '{ if (\$3 != "Running"){print} }'";
-        kubectl get pods -n $ns -o wide | awk '{ if ($3 != "Running"){print} }'
+        echo "kubectl get pods -o wide | awk '{ if (\$3 != "Running"){print} }'";
+        kubectl get pods -o wide | awk '{ if ($3 != "Running"){print} }'
 }
 
 kctx(){
