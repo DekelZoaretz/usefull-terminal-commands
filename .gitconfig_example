@@ -1,0 +1,12 @@
+[user]
+	email = dekelzoaretz@gmail.com
+	name = Dekel Zoaretz
+[core]
+	autocrlf = false
+[alias]
+	cho = checkout
+	pl = pull
+	ft = fetch
+	st = status
+[push]
+	autoSetupRemote = true
