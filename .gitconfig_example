@@ -8,5 +8,9 @@
 	pl = pull
 	ft = fetch
 	st = status
+	nm = branch --no-merged
+	br = branch
+	chob = checkout -b
+	brad = branch -D
 [push]
 	autoSetupRemote = true
